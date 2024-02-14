@@ -1,0 +1,13 @@
+.introducaoHome {
+    background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+    height: 650px;
+}
+
+.introducaoConteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imagemIntro {
+    max-width: 444px;
+}
