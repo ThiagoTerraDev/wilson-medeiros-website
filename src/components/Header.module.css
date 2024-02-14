@@ -1,0 +1,28 @@
+header {
+    background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+    height: 296px;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.headerNav {
+    display: flex;
+    gap: 40px;
+    padding-top: 88px;
+}
+
+.headerNav a {
+    color: var(--gray-scale-0);
+    font-family: var(--type-second);
+    font-size: 1.03rem;
+    font-weight: 500;
+}
+
+.headerNav a:hover {
+    color: var(--gray-scale-1);
+}
+
