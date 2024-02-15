@@ -44,6 +44,7 @@
 
 .salesTalksHome {
     margin-top: 96px;
+    margin-bottom: 96px;
 }
 
 .salesTalksText {
@@ -101,7 +102,7 @@
 }
 
 .blockOneText {
-    bottom: 84px;
+    bottom: 201px;
     left: 24px;
 }
 
@@ -111,7 +112,7 @@
 
 .blockTwoText {
     color: var(--color-primary);
-    bottom: 450px;
+    bottom: 567px;
     left: 408px;
 }
 
@@ -120,7 +121,7 @@
 }
 
 .blockThreeText {
-    bottom: 106px;
+    bottom: 223px;
     left: 792px;
 }
 
