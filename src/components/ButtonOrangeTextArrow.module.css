@@ -1,0 +1,35 @@
+.divButtonOrangeText {
+    grid-column: 2;
+    justify-self: center;
+    margin-top: 60px;
+}
+
+.divButtonOrangeText:hover img {
+    transform: translateX(6px);
+    transition: transform 0.3s ease;
+}
+
+.buttonOrangeText {
+    background: none;
+    border: none;
+    padding: 10px 24px;
+    color: var(--color-secondary);
+    position: relative;
+}
+
+.buttonOrangeText::after {
+    content: "";
+    background-color: var(--color-secondary);
+    width: 226px;
+    height: 2px;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+
+.divButtonOrangeText img {
+    position: absolute;
+    bottom: 14.5px;
+    right: 38.6%;
+    transition: transform 0.3s ease;
+}

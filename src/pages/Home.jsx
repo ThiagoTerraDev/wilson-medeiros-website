@@ -1,4 +1,5 @@
 import ButtonOrangeBackground from "../components/ButtonOrangeBackground";
+import ButtonOrangeTextArrow from "../components/ButtonOrangeTextArrow";
 import styles from "./Home.module.css";
 
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
                         <h3>Middle Market</h3>
                         <p>Inspirar e contribuir com fundadores, empresários e gestores de empresas médias que precisam superar obstáculos relacionados ao crescimento e/ou reverter resultados adversos.</p>
                     </div>
+                    <ButtonOrangeTextArrow name="CONHEÇA A SALES TALKS" path="/" />
                 </div>
             </section>
         </div>
