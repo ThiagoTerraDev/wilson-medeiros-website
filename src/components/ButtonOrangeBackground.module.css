@@ -1,0 +1,13 @@
+.buttonOrangeBgClass{
+    background-color: var(--color-secondary);
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+    color: var(--gray-scale-0);
+}
+
+.buttonOrangeBgClass:hover {
+    outline: 2px solid rgba(254, 82, 24, 0.7);
+    outline-offset: 2px;
+    transition: 0.2s ease;
+}
