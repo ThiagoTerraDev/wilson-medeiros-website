@@ -6,8 +6,74 @@
 .introducaoConteudo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-end;
+}
+
+.introConteudoEscrito {
+    padding-top: 54px;
+}
+
+.introConteudoEscrito h1 {
+    color: var(--gray-scale-0);
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.introConteudoEscrito h1::after {
+    content: "";
+    width: 56px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0px;
+    bottom: -32px;
+}
+
+.introConteudoEscrito p {
+    color: var(--gray-scale-1);
+    font-size: 1.2rem;
+    line-height: 180%;
+    max-width: 520px;
+    margin-bottom: 52px;
 }
 
 .imagemIntro {
     max-width: 444px;
+}
+
+.salesTalksHome {
+    margin-top: 96px;
+}
+
+.salesTalksText {
+    display: grid;
+    grid-template-columns: 1.55fr 1fr;
+}
+
+.salesTalksText h2 {
+    color: var(--color-primary);
+    margin-bottom: 48px;
+}
+
+.salesTalksText p {
+    font-size: 1.2rem;
+    line-height: 180%;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+}
+
+.salesTalksText img {
+    padding: 180px 0 0 200px;
+}
+
+.salesTalksBlocks {
+    margin-top: 136px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.salesTalksBlocks img:nth-of-type(1), .salesTalksBlocks img:nth-of-type(3) {
+    padding-top: 52px;
 }
