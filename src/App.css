@@ -30,6 +30,11 @@ h2 {
     line-height: 130%;
 }
 
+h3 {
+    font-family: var(--type-first);
+    font-size: 1.6rem;
+}
+
 p {
     font-family: var(--type-second);
 }
