@@ -32,6 +32,18 @@ const Home = () => {
                     <img src="/sales-block-1.png" alt="Men in meeting" />
                     <img src="sales-block-2.png" alt="Men using cell phones" />
                     <img src="sales-block-3.png" alt="Corporate buildings" />
+                    <div className={styles.blockOneText}>
+                        <h3>Praticar e provocar o exercício da troca</h3>
+                        <p>Este é o chassi da Sales Talks. A principal premissa das relações, especialmente as comerciais, é trocar ideias com todos os tipos de pessoas, das mais simples às acadêmicas.</p>
+                    </div>
+                    <div className={styles.blockTwoText}>
+                        <h3>Nova era de vendas</h3>
+                        <p>Novas competências digitais, novas perspectivas de vendas e relacionamento com clientes. É o momento de abraçar uma abordagem mais humana, autêntica e diferenciada para alcançar o sucesso.</p>
+                    </div>
+                    <div className={styles.blockThreeText}>
+                        <h3>Middle Market</h3>
+                        <p>Inspirar e contribuir com fundadores, empresários e gestores de empresas médias que precisam superar obstáculos relacionados ao crescimento e/ou reverter resultados adversos.</p>
+                    </div>
                 </div>
             </section>
         </div>

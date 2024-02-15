@@ -68,12 +68,62 @@
 }
 
 .salesTalksBlocks {
-    margin-top: 136px;
+    margin-top: 96px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+    position: relative;
 }
 
 .salesTalksBlocks img:nth-of-type(1), .salesTalksBlocks img:nth-of-type(3) {
     padding-top: 52px;
+}
+
+.blockOneText, .blockTwoText, .blockThreeText {
+    position: absolute;
+}
+
+.blockOneText h3, .blockTwoText h3, .blockThreeText h3 {
+    max-width: 252px;
+}
+
+.blockOneText p, .blockTwoText p, .blockThreeText p {
+    margin-top: 24px;
+    line-height: 160%;
+}
+
+.blockOneText h3, .blockThreeText h3 {
+    color: var(--gray-scale-0);
+}
+
+.blockOneText p, .blockThreeText p {
+    color: var(--gray-scale-1);
+}
+
+.blockOneText {
+    bottom: 84px;
+    left: 24px;
+}
+
+.blockOneText p {
+    max-width: 285px;
+}
+
+.blockTwoText {
+    color: var(--color-primary);
+    bottom: 450px;
+    left: 408px;
+}
+
+.blockTwoText p {
+    max-width: 304px;
+}
+
+.blockThreeText {
+    bottom: 106px;
+    left: 792px;
+}
+
+.blockThreeText p {
+    max-width: 303px;
 }
