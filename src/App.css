@@ -13,6 +13,7 @@ body {
     --color-terciary: #0AC2F4;
     --gray-scale-0: #FFFFFF;
     --gray-scale-1:#DEDEDE;
+    --gray-scale-2:#CCCCCC;
 }
 
 h1, h2, h3, h4, p {
@@ -34,6 +35,12 @@ h2 {
 h3 {
     font-family: var(--type-first);
     font-size: 1.6rem;
+}
+
+h4 {
+    font-family: var(--type-first);
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 p {
