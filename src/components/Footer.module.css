@@ -38,5 +38,6 @@ footer p:nth-child(3) {
 }
 
 .lastParagraph {
-  margin-left: 436px;
+  display: flex;
+  padding-left: 38px;
 }
