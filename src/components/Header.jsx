@@ -9,7 +9,7 @@ const Header = () => {
           <NavLink to="/">
             <img src="/logo-tagline-wm.svg" alt="Wilson Medeiros logo" />
           </NavLink>
-          <nav className={styles.headerNav}>
+          <nav className={styles.headerNav} data-menu="list">
             <NavLink to="/sobre">Sobre</NavLink>
             <NavLink to="/salestalks">Sales Talks</NavLink>
             <NavLink to="/porquecontratar">Por que contratar?</NavLink>
