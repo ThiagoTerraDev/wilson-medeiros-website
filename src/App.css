@@ -43,6 +43,11 @@ h4 {
     font-size: 1.1rem;
 }
 
+h5 {
+    font-family: var(--type-second);
+    font-size: 1.1rem;
+}
+
 p {
     font-family: var(--type-second);
 }

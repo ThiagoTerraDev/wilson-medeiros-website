@@ -1,0 +1,430 @@
+.introContratar {
+  background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+  padding-bottom: 96px;
+  margin-bottom: 104px;
+}
+
+.introContratarConteudo {
+  display: grid;
+  grid-template-columns: 1.53fr 1fr;
+  justify-items: flex-end;
+  padding-bottom: 88px;
+}
+
+.introContratarConteudoEscrito {
+  padding-top: 54px;
+}
+
+.introContratarConteudoEscrito h1 {
+  color: var(--gray-scale-0);
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.introContratarConteudoEscrito h1::after {
+  content: "";
+  width: 56px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0px;
+  bottom: -32px;
+}
+
+.introContratarConteudoEscrito p {
+  color: var(--gray-scale-1);
+  font-size: 1.2rem;
+  line-height: 180%;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.introContratarConteudo {
+  position: relative;
+}
+
+.introContratarConteudo img {
+  position: absolute;
+  top: 57px;
+  right: -60px;
+}
+
+.introContratarItens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.introContratarItens h5 {
+  color: var(--gray-scale-0);
+  max-width: 190px;
+  line-height: 160%;
+  position: relative;
+}
+
+.introContratarItens h5::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: -16px;
+  top: 10px;
+}
+
+.introContratarItens p {
+  color: var(--gray-scale-1);
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.maioresDesafiosFirst {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-bottom: 64px;
+}
+
+.maioresDesafiosFirst span {
+  color: var(--color-terciary);
+  font-family: var(--type-first);
+  font-weight: 600;
+}
+
+.maioresDesafiosFirst h2 {
+  color: var(--color-se);
+  margin-bottom: 48px;
+}
+
+.maioresDesafiosSecond {
+  background: linear-gradient(to right, rgba(45, 100, 113, 0.2) 50%, #F7F7F7 50%);
+  margin-bottom: 96px;
+}
+
+.maioresDesafiosSecondDivs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 200px;
+  padding: 48px 0 32px 0;
+}
+
+.maioresDesafiosSecondDivs p {
+  margin-bottom: 32px;
+  line-height: 160%;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.parteDepoimentos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-bottom: 88px;
+}
+
+.parteDepoimentos p {
+  font-family: var(--type-second);
+  font-weight: 600;
+  color: rgba(14, 60, 88, 0.5);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+
+.parteDepoimentos span {
+  font-family: var(--type-second);
+  font-weight: 300;
+  font-size: 1.4rem;
+  font-style: italic;
+  position: relative;
+  color: rgba(14, 60, 88, 0.5);
+}
+
+.ganhosContratacao {
+  background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+}
+
+.ganhosContratacao span {
+  color: var(--color-terciary);
+  font-family: var(--type-first);
+  font-weight: 600;
+}
+
+.ganhosContratacao h2 {
+  color: var(--gray-scale-0);
+  margin-top: 8px;
+}
+
+.ganhosContratacaoConteudo {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: grid;
+}
+
+.ganhosContratacaoConteudo button {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.ganhosContratacaoItens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 0;
+  gap: 28px;
+}
+
+.ganhosContratacaoItens h3 {
+  font-weight: 700;
+}
+
+.ganhosContratacaoItem1 {
+  display: grid;
+  background-color: rgba(4, 4, 5, 0.6);
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 30px;
+}
+
+.ganhosContratacaoItem2 {
+  display: grid;
+  background-color: var(--gray-scale-0);
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 49px;
+}
+
+.ganhosContratacaoItem3 {
+  display: grid;
+  background-color: rgba(4, 4, 5, 0.6);
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 98px;
+}
+
+.ganhosContratacaoItem4 {
+  display: grid;
+  background-color: var(--gray-scale-0);
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 80px;
+}
+
+.ganhosContratacaoItem5 {
+  display: grid;
+  background-color: rgba(4, 4, 5, 0.6);
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 97px;
+}
+
+.ganhosContratacaoItem6 {
+  display: grid;
+  background-color: var(--gray-scale-0);;
+  height: 310px;
+  width: 355px;
+  place-items: center;
+  border-radius: 4px;
+  grid-template-rows: 160px 48px;
+}
+
+.ganhosContratacaoItem1 h3, .ganhosContratacaoItem3 h3 {
+  color: var(--gray-scale-0);
+}
+
+.ganhosContratacaoItem2 h3 {
+  color: var(--color-primary);
+}
+
+.ganhosContratacaoItem1 p {
+  color: var(--gray-scale-1);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  max-width: 280px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem2 p {
+  color: var(--color-primary);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 28px;
+  max-width: 280px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem3 p {
+  color: var(--gray-scale-1);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 25px;
+  max-width: 290px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem1 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-scale-0);
+  position: absolute;
+  left: 22px;
+  top: 8px;
+}
+
+.ganhosContratacaoItem2 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+
+.ganhosContratacaoItem3 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-scale-0);
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+
+.ganhosContratacaoItem4 h3, .ganhosContratacaoItem6 h3 {
+  color: var(--color-primary);
+}
+
+.ganhosContratacaoItem5 h3 {
+  color: var(--gray-scale-0);
+}
+
+.ganhosContratacaoItem4 p {
+  color: var(--color-primary);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  max-width: 290px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem5 p {
+  color: var(--gray-scale-1);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 28px;
+  max-width: 280px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem6 p {
+  color: var(--color-primary);
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 25px;
+  max-width: 280px;
+  line-height: 160%;
+}
+
+.ganhosContratacaoItem4 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 7px;
+  top: 8px;
+}
+
+.ganhosContratacaoItem5 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-scale-0);
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.ganhosContratacaoItem6 p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 9px;
+  top: 8px;
+}
+
+.depoimentoHome {
+  background-color: rgba(45, 100, 113, 0.1);;
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-top: 112px;
+  margin-bottom: 112px;
+  display: grid;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 72px 0;
+  border-radius: 4px;
+}
+
+.depoimentoHome img {
+  max-width: 150px;
+}
+
+.depoimentoHome p {
+  color: var(--color-primary);
+  font-family: var(--type-second);
+  font-style: italic;
+  font-size: 1.8rem;
+  max-width: 800px;
+  line-height: 160%;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  font-weight: 900;
+}
+
+.depoimentoHome span {
+  font-family: var(--type-second);
+  font-weight: 300;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 100;
+}
+
+.depoimentoHome span::before {
+  content: "";
+  width: 56px;
+  height: 2px;	
+  position: absolute;
+  background-color: var(--color-secondary); 
+  top: -32px;
+  right: 45.4%;
+  z-index: 200;
+  display: block;	
+}
