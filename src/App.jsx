@@ -5,6 +5,8 @@ import Contato from "./pages/Contato";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PorqueContratar from "./pages/PorqueContratar";
+import SalesTalksManifesto from "./pages/SalesTalksManifesto";
+import SalesTalksOqueE from "./pages/SalesTalksOqueE";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/porquecontratar" element={<PorqueContratar />} />
+            <Route path="/salestalksoque" element={<SalesTalksOqueE />} />
+            <Route path="/salestalksmanifesto" element={<SalesTalksManifesto />} />
           </Routes>
           <Footer />
         </BrowserRouter>
