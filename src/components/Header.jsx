@@ -1,7 +1,30 @@
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
+
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleClickDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
       <header>
@@ -11,10 +34,15 @@ const Header = () => {
           </NavLink>
           <nav className={styles.headerNav} data-menu="list">
             <NavLink to="/sobre">Sobre</NavLink>
-            <NavLink to="/salestalks">Sales Talks</NavLink>
+            <p onClick={handleClickDropdown}>Sales Talks</p>
             <NavLink to="/porquecontratar">Por que contratar?</NavLink>
             <NavLink to="/contato">Contato</NavLink>
           </nav>
+          <div ref={dropdownRef}
+            className={`${styles.dropdownMenu} ${dropdownVisible ? styles.active : ""}`}>
+            <NavLink to="/salestalksoque">O que é?</NavLink>
+            <NavLink to="/salestalksmanifesto">Manifesto</NavLink>
+          </div>
         </div>
       </header>
     </div>
