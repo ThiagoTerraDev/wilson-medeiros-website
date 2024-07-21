@@ -1,0 +1,84 @@
+.introducaoManifesto {
+  margin-bottom: 96px;
+}
+
+.introducaoManifestoConteudo {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-items: flex-end;
+  position: relative;
+}
+
+.introConteudoEscrito {
+  padding-top: 104px;
+}
+
+.introConteudoEscrito h1 {
+  color: var(--color-primary);
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.introConteudoEscrito h1::after {
+  content: "";
+  width: 56px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0px;
+  bottom: -32px;
+}
+
+.introConteudoEscrito p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 180%;
+  max-width: 620px;
+  margin-bottom: 52px;
+}
+
+.imagemIntro {
+    position: absolute;
+    top: 57px;
+    right: -60px;
+}
+
+.itensManifesto {
+  margin-bottom: 120px;
+}
+
+.conteudoColorido {
+  background: linear-gradient(to right, #ffffff 11%, rgba(45, 100, 113, 0.1) 11%);
+  padding: 64px 0 64px 120px;
+}
+
+.conteudoColorido h2 {
+  margin-bottom: 40px;
+  color: var(--color-primary);
+}
+
+.conteudoBranco {
+  padding: 64px 0 64px 120px;
+}
+
+.conteudoBranco h2 {
+  margin-bottom: 40px;
+  color: var(--color-primary);
+}
+
+.conteudoColorido p, .conteudoBranco p{
+  max-width: 1000px;
+  font-size: 1.1rem;
+  line-height: 160%;
+  color: var(--color-primary);
+}
+
+.buttonDiv {
+  position: relative;
+  padding-left: 35px;
+}
+
+.buttonDiv button {
+  
+}
