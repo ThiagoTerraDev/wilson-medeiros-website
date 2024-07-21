@@ -5,14 +5,14 @@
 }
 
 .divButtonOrangeText:hover img {
-    transform: translateX(6px);
-    transition: transform 0.3s ease;
+    transform: translateX(5px);
+    transition: transform 0.5s ease;
 }
 
 .buttonOrangeText {
     background: none;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 12px 10px 24px;
     color: var(--color-secondary);
     position: relative;
 }
@@ -20,7 +20,7 @@
 .buttonOrangeText::after {
     content: "";
     background-color: var(--color-secondary);
-    width: 226px;
+    width: 92%;
     height: 2px;
     position: absolute;
     top: 40px;
@@ -28,8 +28,5 @@
 }
 
 .divButtonOrangeText img {
-    position: absolute;
-    bottom: 14.5px;
-    right: 38.6%;
     transition: transform 0.3s ease;
 }
