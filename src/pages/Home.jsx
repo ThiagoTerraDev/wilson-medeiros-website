@@ -45,7 +45,7 @@ const Home = () => {
             <h3>Middle Market</h3>
             <p>Inspirar e contribuir com fundadores, empresários e gestores de empresas médias que precisam superar obstáculos relacionados ao crescimento e/ou reverter resultados adversos.</p>
           </div>
-          <ButtonOrangeTextArrow name="CONHEÇA A SALES TALKS" path="/" />
+          <ButtonOrangeTextArrow name="CONHEÇA A SALES TALKS" path="salestalksoque" />
         </div>
       </section>
 
@@ -79,7 +79,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <ButtonOrangeBackground path="/" name="VER DETALHES"/>
+          <ButtonOrangeBackground path="porquecontratar" name="VER DETALHES"/>
         </div>
       </section>
 
