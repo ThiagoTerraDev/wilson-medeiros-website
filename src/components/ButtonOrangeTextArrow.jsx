@@ -5,6 +5,11 @@ const ButtonOrangeTextArrow = (props) => {
 
   const navigate = useNavigate();
 
+  const handleClickButton = () => {
+    navigate(pagina);
+    window.scrollTo(0, 0);
+  };
+
   let pagina = "/";
 
   if (props.path === "sobre") {
@@ -21,7 +26,7 @@ const ButtonOrangeTextArrow = (props) => {
   
   return (
     <div className={styles.divButtonOrangeText}>
-      <button className={styles.buttonOrangeText} onClick={() => navigate(pagina)}>{props.name}</button>
+      <button className={styles.buttonOrangeText} onClick={handleClickButton}>{props.name}</button>
       <img src="/arrow-component.svg" alt="" />
     </div> 
   );

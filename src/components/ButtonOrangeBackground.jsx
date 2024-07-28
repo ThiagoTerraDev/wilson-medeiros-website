@@ -5,6 +5,11 @@ const ButtonOrangeBackground = (props) => {
 
   const navigate = useNavigate();
 
+  const handleClickButton = () => {
+    navigate(pagina);
+    window.scrollTo(0, 0);
+  };
+
   let pagina = "/";
 
   if (props.path === "sobre") {
@@ -13,10 +18,12 @@ const ButtonOrangeBackground = (props) => {
     pagina = "/porquecontratar";
   } else if (props.path === "contato") {
     pagina = "/contato";
+  } else if (props.path === "salestalksmanifesto") {
+    pagina = "/salestalksmanifesto";
   }
 
   return (
-    <button className={styles.buttonOrangeBgClass} onClick={() => navigate(pagina)}>{props.name}</button>
+    <button className={styles.buttonOrangeBgClass} onClick={handleClickButton}>{props.name}</button>
   );
 };
 
