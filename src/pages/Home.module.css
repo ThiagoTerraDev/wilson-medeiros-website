@@ -105,6 +105,7 @@
 .blockOneText {
     bottom: 201px;
     left: 24px;
+    top: 360px;
 }
 
 .blockOneText p {
@@ -115,6 +116,7 @@
     color: var(--color-primary);
     bottom: 567px;
     left: 408px;
+    top: 40px;
 }
 
 .blockTwoText p {
@@ -124,6 +126,7 @@
 .blockThreeText {
     bottom: 223px;
     left: 792px;
+    top: 375px;
 }
 
 .blockThreeText p {
