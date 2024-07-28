@@ -1,18 +1,19 @@
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
 
   const handleClickDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
 
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !location.pathname.includes("salestalks")) {
       setDropdownVisible(false);
     }
   };
@@ -23,7 +24,13 @@ const Header = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  },);
+
+  useEffect(() => {
+    if (!location.pathname.includes("salestalks")) {
+      setDropdownVisible(false);
+    }
+  }, [location]);
 
   return (
     <div>
