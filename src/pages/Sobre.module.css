@@ -1,0 +1,405 @@
+.introducaoSobre {
+  margin-top: 16px;
+  margin-bottom: 96px;
+}
+
+.introducaoSobreConteudo {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  position: relative;
+}
+
+.introducaoSobreConteudoEscrito {
+  padding-top: 72px;
+}
+
+.introducaoSobreConteudoEscrito h1 {
+  color: var(--color-primary);
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.introducaoSobreConteudoEscrito h1::after {
+  content: "";
+  width: 56px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0px;
+  bottom: -32px;
+}
+
+.introducaoSobreConteudoEscrito p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 180%;
+  max-width: 670px;
+  margin-bottom: 32px;
+}
+
+.introducaoSobreConteudoEscrito p:nth-of-type(2) {
+  margin-bottom: -32px;
+}
+
+.imagemIntro {
+  position: absolute;
+  top: 70px;
+  right: -50px;
+}
+
+.introducaoSobreConteudoEscrito button {
+  padding-left: 0;
+}
+
+.introducaoSobreConteudoEscrito button::after {
+  left: 0;
+  width: 106%;
+}
+
+.sobreFatosSection {
+  background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+  padding: 96px 0;
+  margin-bottom: 96px;
+}
+
+.sobreFatosConteudo {
+  display: grid;
+}
+
+.sobreFatosConteudo span {
+  color: var(--color-terciary);
+  font-family: var(--type-first);
+  font-weight: 600;
+}
+
+.sobreFatosConteudo h2 {
+  color: var(--gray-scale-0);
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.sobreFatosTextoLogo {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-bottom: 80px;
+}
+
+.sobreFatosDivBlocos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 72px;
+  margin-bottom: 96px;
+}
+
+.sobreFatosDivBlocos div {
+  background-color: var(--gray-scale-0);
+  padding: 24px;
+  border-radius: 4px;
+  max-width: 325px;
+}
+
+.sobreFatosDivBlocos p {
+  font-size: 1.2rem;
+  line-height: 160%;
+}
+
+.sobreFatosDivBlocos div:first-of-type {
+  padding: 48px;
+  padding-top: 72px;
+  position: relative;
+}
+
+.sobreFatosDivBlocos div:first-of-type::after {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  right: -37.2px;
+  top: 72px;
+}
+
+.sobreFatosDivBlocos div:nth-of-type(2) {
+  padding: 32px;
+  padding-top: 56px;
+  position: relative;
+}
+
+.sobreFatosDivBlocos div:nth-of-type(2)::after {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  right: -36px;
+  top: 72px;
+}
+
+.sobreFatosDivBlocos div:nth-of-type(3) {
+  padding: 24px;
+}
+
+.sobreFatosSection button {
+  margin: 0 auto;
+}
+
+.sobrePreTrajetoria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-bottom: 72px;
+}
+
+.sobrePreTrajetoria p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 180%;
+  max-width: 750px;
+}
+
+.sobrePreTrajetoria p:first-of-type {
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+
+.sobrePreTrajetoria h1 {
+  color: rgba(14, 60, 88, 0.25);
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.sobreQuotes {
+  background: linear-gradient(to right, rgba(45, 100, 113, 0.1) 62.5%, rgba(255, 255, 255, 1) 37.5%);
+  margin-bottom: 112px;
+}
+
+.sobreQuotesDiv {
+  padding: 104px 0 48px 64px;
+  position: relative;
+}
+
+.sobreQuotesDiv::before {
+  content: "";
+  width: 50px;
+  height: 687px;
+  background-image: url('quotesLinesElement.svg');
+  position: absolute;
+  left: -16px;
+  top: 90px;
+}
+
+.sobreQuotesTexto p {
+  line-height: 160%;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgba(14, 60, 88, 0.5);
+  font-family: var(--type-second);
+  font-weight: 600;
+}
+
+.sobreQuotesAutor {
+  font-family: var(--type-first);
+  font-size: 2rem;
+  font-style: italic;
+  color: rgba(14, 60, 88, 0.55);
+  margin-top: 64px;
+  padding-left: 48px;
+}
+
+.sobreQuotesDiv img {
+  position: absolute;
+  bottom: 40px;
+  right: 16px;
+}
+
+.trajetoriaSection h2 {
+  color: var(--color-primary);
+}
+
+.trajetoriaSection {
+  margin-bottom: 96px;
+}
+
+.trajetoriaSection p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 160%;
+  max-width: 1110px;
+  margin-top: 48px;
+}
+
+.trajetoriaSection button {
+  padding-left: 0;
+}
+
+.trajetoriaSection button::after {
+  left: 0;
+  width: 105%;
+}
+
+.trajetoriaSection a:hover {
+  color: rgba(14, 60, 88, 0.55);
+}
+
+.publicacoesFirst {
+  background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
+  padding: 96px 0;
+  margin-bottom: 96px;
+}
+
+.publicacoesFirst h2 {
+  color: var(--gray-scale-0);
+  margin-bottom: 80px;
+}
+
+.publicacoesFirst h3 {
+  color: var(--gray-scale-0);
+  font-size: 1.6rem;
+  margin-bottom: 104px;
+  padding-left: 72px;
+  position: relative;
+}
+
+.publicacoesFirst h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-scale-0);
+  position: absolute;
+  left: 50px;
+  top: 40%;
+  border-radius: 1px;
+}
+
+.publicacoesFirstBlocos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 72px;
+  margin-bottom: 128px;
+}
+
+.publicacoesFirstBlocos div {
+  background-color: var(--gray-scale-0);
+  padding: 24px;
+  border-radius: 4px;
+  max-width: 325px;
+}
+
+.publicacoesFirstBlocos p {
+  font-size: 1.2rem;
+  line-height: 160%;
+}
+
+.publicacoesFirstBlocos div:first-of-type {
+  padding: 48px;
+  padding-top: 72px;
+  position: relative;
+}
+
+.publicacoesFirstBlocos div:first-of-type::after {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  right: -37.2px;
+  top: 72px;
+}
+
+.publicacoesFirstBlocos div:nth-of-type(2) {
+  padding: 32px;
+  padding-top: 56px;
+  position: relative;
+}
+
+.publicacoesFirstBlocos div:nth-of-type(2)::after {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  right: -36px;
+  top: 72px;
+}
+
+.publicacoesFirstBlocos div:nth-of-type(3) {
+  padding: 24px;
+}
+
+.publicacoesFirstPaginasArtigos {
+  display: flex;
+  font-family: var(--type-second);
+  font-size: 1.2rem;
+  color: var(--gray-scale-0);
+  gap: 40px;
+  justify-self: center;
+}
+
+.publicacoesSecond {
+  margin-bottom: 80px;
+}
+
+.publicacoesSecond h3 {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-bottom: 80px;
+  padding-left: 72px;
+  position: relative;
+}
+
+.publicacoesSecond h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 50px;
+  top: 40%;
+  border-radius: 1px;
+}
+
+.publicacoesSecondDiv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 72px;
+}
+
+.publicacoesSecondDiv img {
+  padding-left: 64px;
+}
+
+.publicacoesSecondDiv > div {
+  padding-top: 56px;
+}
+
+.publicacoesSecondDiv h4 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.publicacoesSecondDiv p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  line-height: 160%;
+  max-width: 97%;
+}
+
+.publicacoesSecondDiv button {
+  padding-left: 0;
+}
+
+.publicacoesSecondDiv button::after {
+  left: 0;
+  width: 105%;
+}
+
+.publicacoesSecondDiv img:nth-child(2) {
+  padding-left: 0px;
+}
+
+.divAntesBotao {
+  margin-top: -30px;
+}
