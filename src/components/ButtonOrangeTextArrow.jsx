@@ -6,8 +6,12 @@ const ButtonOrangeTextArrow = (props) => {
   const navigate = useNavigate();
 
   const handleClickButton = () => {
-    navigate(pagina);
-    window.scrollTo(0, 0);
+    if (props.path.startsWith("http")) {
+      window.open(props.path, "_blank");
+    } else {
+      navigate(pagina);
+      window.scrollTo(0, 0);
+    }
   };
 
   let pagina = "/";
