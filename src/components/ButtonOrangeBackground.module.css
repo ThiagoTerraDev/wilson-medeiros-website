@@ -12,3 +12,9 @@
     outline-offset: 2px;
     transition: 0.2s ease;
 }
+
+/* @media (max-width: 1300px) {
+    button {
+        font-size: 0.9rem;
+    }
+} */

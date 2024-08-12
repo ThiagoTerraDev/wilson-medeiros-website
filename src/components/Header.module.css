@@ -88,3 +88,13 @@ header {
 .dropdownMenu a[aria-current="page"] {
     color: var(--gray-scale-0);
 }
+
+/* @media (max-width: 1300px) {  
+    .headerNav a {
+        font-size: 1rem;
+    }
+    
+    .headerNav p {
+        font-size: 1rem;
+    }
+} */

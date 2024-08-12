@@ -60,6 +60,7 @@ ul, li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -73,3 +74,21 @@ button {
     max-width: 1120px;
     margin: 0 auto;
 }
+
+/* @media (max-width: 1300px) {
+    .container1 {
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+} */
