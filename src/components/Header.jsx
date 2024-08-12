@@ -29,6 +29,8 @@ const Header = () => {
   useEffect(() => {
     if (!location.pathname.includes("salestalks")) {
       setDropdownVisible(false);
+    } else {
+      setDropdownVisible(true);
     }
   }, [location]);
 
