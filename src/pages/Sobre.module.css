@@ -183,7 +183,7 @@
   content: "";
   width: 50px;
   height: 687px;
-  background-image: url('quotesLinesElement.svg');
+  background-image: url('/quotesLinesElement.svg');
   position: absolute;
   left: -16px;
   top: 90px;
