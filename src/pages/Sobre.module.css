@@ -128,7 +128,7 @@
 
 .sobreFatosDivBlocos div:nth-of-type(2)::after {
   content: "";
-  width: 1px;
+  width: 1.2px;
   height: 96px;
   background-color: var(--color-secondary);
   position: absolute;
@@ -277,54 +277,80 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 72px;
   margin-bottom: 128px;
+  min-height: 420px;
 }
 
 .publicacoesFirstBlocos div {
   background-color: var(--gray-scale-0);
-  padding: 24px;
+  padding: 24px 24px 18px 24px;
   border-radius: 4px;
-  max-width: 325px;
+  max-width: 345px;
+  position: relative;
+}
+
+.publicacoesFirstBlocos span:first-of-type {
+  color: rgba(14, 60, 88, 0.7);
+  font-family: var(--type-second);
+  font-weight: 200;
+  font-size: 1.05rem;
+}
+
+.publicacoesFirstBlocos h4 {
+  font-size: 1.2rem;
+  line-height: 160%;
+  color: var(--color-primary);
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.localPublicado {
+  color: rgba(14, 60, 88, 0.9);
+  font-family: var(--type-third);
+  font-weight: 200;
+  font-size: 1.05rem;
+  font-style: italic;
 }
 
 .publicacoesFirstBlocos p {
   font-size: 1.2rem;
   line-height: 160%;
+  color: var(--color-primary);
+  margin-top: 32px;
 }
 
-.publicacoesFirstBlocos div:first-of-type {
-  padding: 48px;
-  padding-top: 72px;
+.publicacoesFirstBlocos div:first-child {
   position: relative;
 }
 
-.publicacoesFirstBlocos div:first-of-type::after {
+.publicacoesFirstBlocosDivPrincipal:first-of-type:after {
   content: "";
   width: 1px;
   height: 96px;
   background-color: var(--color-secondary);
   position: absolute;
   right: -37.2px;
-  top: 72px;
+  top: 176px;
 }
 
-.publicacoesFirstBlocos div:nth-of-type(2) {
-  padding: 32px;
-  padding-top: 56px;
+.publicacoesFirstBlocosDivPrincipal {
   position: relative;
 }
 
-.publicacoesFirstBlocos div:nth-of-type(2)::after {
+.publicacoesFirstBlocosDivPrincipal:nth-of-type(2):after {
   content: "";
   width: 1px;
   height: 96px;
   background-color: var(--color-secondary);
   position: absolute;
   right: -36px;
-  top: 72px;
+  top: 176px;
 }
 
-.publicacoesFirstBlocos div:nth-of-type(3) {
-  padding: 24px;
+.publicacoesFirstBlocosButtonDiv > div {
+  padding: 0px;
+  margin-top: 0px;
+  position: absolute;
+  left: -46.5px;
 }
 
 .publicacoesFirstPaginasArtigos {
@@ -334,6 +360,26 @@
   color: var(--gray-scale-0);
   gap: 40px;
   justify-self: center;
+}
+
+.publicacoesFirstPaginasArtigos li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.publicacoesFirstPaginasArtigos li.activePage {
+  position: relative;
+}
+
+.publicacoesFirstPaginasArtigos li.activePage::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url('rectangle-artigos.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -15px;
 }
 
 .publicacoesSecond {

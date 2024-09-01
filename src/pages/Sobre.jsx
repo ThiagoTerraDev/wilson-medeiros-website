@@ -1,8 +1,22 @@
 import ButtonOrangeBackground from "../components/ButtonOrangeBackground";
 import ButtonOrangeTextArrow from "../components/ButtonOrangeTextArrow";
 import styles from "./Sobre.module.css";
+import Artigos from "../artigos.json";
+import { useState } from "react";
 
 const Sobre = () => {
+
+  const [activePage, setActivePage] = useState(1);
+  const articlesPerPage = 3;
+
+  const handlePageClick = (pageNumber) => {
+    setActivePage(pageNumber);
+  };
+
+  const indexOfLastArticle = activePage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = Artigos.slice(indexOfFirstArticle, indexOfLastArticle);
+
   return (
     <div>
       <section className={styles.introducaoSobre}>
@@ -78,24 +92,28 @@ const Sobre = () => {
           <h2>PUBLICAÇÕES</h2>
           <h3>ARTIGOS</h3>
           <div className={styles.publicacoesFirstBlocos}>
-            <div>
-              <p>1/3 do grupo dos times de alta performance nunca explica a meta. Ele faz.</p>
-            </div>
-            <div>
-              <p>1/3 dos vendedores ainda superam em mais de 100% a meta. Eles são considerados &quot;fora da curva&quot;.</p>
-            </div>
-            <div>
-              <p>1/3 daqueles que compõem o &quot;terceiro grupo&quot; são conhecidos como &quot;especialistas em explicar&quot; porque as metas não foram cumpridas. Para eles, tudo é motivo de desculpa.</p>
-            </div>
+            {currentArticles.map((artigo, index) => {
+              return <div key={index} className={styles.publicacoesFirstBlocosDivPrincipal}>
+                <span>Publicado em: {artigo.dataPostagem}</span>
+                <h4>{artigo.titulo}</h4>
+                <span className={styles.localPublicado}>{artigo.localPublicado}</span>
+                <p>{`"${artigo.resumo}"`}</p>
+                <div className={styles.publicacoesFirstBlocosButtonDiv}>
+                  <ButtonOrangeTextArrow name="Leia completo aqui" path={artigo.link} />
+                </div>
+              </div>;
+            })}
           </div>
           <ul className={styles.publicacoesFirstPaginasArtigos}>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
+            {[1, 2, 3, 4, 5, 6, 7].map((pageNumber) => {
+              return <li
+                key={pageNumber}
+                className={activePage === pageNumber ? styles.activePage : ""}
+                onClick={() => handlePageClick(pageNumber)}
+              >
+                {pageNumber}
+              </li>;
+            })}
           </ul>
         </div>
       </section>
