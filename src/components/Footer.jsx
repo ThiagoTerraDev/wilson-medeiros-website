@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
         <div className={`${styles.footerContent} container1`}>
           <div>
-            <img src="/logo-tagline-wm.svg" alt="Wilson Medeiros logo" />
+            <img className={styles.footerLogo} src="/logo-tagline-wm.svg" alt="Wilson Medeiros logo" />
           </div>
           <div>
             <h4>WILSON MEDEIROS</h4>

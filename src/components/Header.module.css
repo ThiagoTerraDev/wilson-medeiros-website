@@ -89,12 +89,151 @@ header {
     color: var(--gray-scale-0);
 }
 
-/* @media (max-width: 1300px) {  
+.menuButton {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--gray-scale-0);
+    z-index: 1002;
+}
+  
+
+@media (max-width: 1100px) {
+    header {
+        height: 230px;
+    }
+
+    .mainLogo {
+        max-width: 80%;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .menuButton img {
+        width: 55px;
+    }
+
+    .headerNav {
+        display: none;
+    }
+
+    .headerNav.active {
+        display: grid;
+        grid-template-rows: repeat(4, 100px);
+        right: 0;
+        position: fixed;
+        top: 0;
+        width: 200px; 
+        height: 100%;
+        background-color: var(--gray-scale-0);
+        padding: 60px 30px 0px 30px;
+        transition: right 1s ease;
+        z-index: 2000; 
+      }
+    
     .headerNav a {
-        font-size: 1rem;
+        color: var(--color-primay);
+        font-family: var(--type-second);
+        font-size: 1.03rem;
+        font-weight: 500;
+        position: relative;
     }
     
     .headerNav p {
-        font-size: 1rem;
+        color: var(--color-primay);
+        font-family: var(--type-second);
+        font-size: 1.03rem;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: left;
     }
-} */
+    
+    .headerNav a[aria-current="page"]::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 26px;
+    }
+    
+    .headerNav a:hover , .headerNav p:hover  {
+        color: var(--gray-scale-1);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease;
+        z-index: 1000;
+    }
+    
+    .showOverlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdownMenu {
+        position: fixed;
+        top: 230px;
+        right: 72px;
+        gap: 24px;
+        padding: 20px 24px 20px 16px;
+        border-radius: 2px;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 3000;
+    }
+
+    .dropdownMenu::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 7px solid var(--color-secondary);
+        position: absolute;
+        top: -6px;
+        left: 15px;
+    }
+    
+    .dropdownMenu a {
+        color: black;
+        font-family: var(--type-second);
+        font-size: 0.9rem;
+    }
+    
+    .dropdownMenu a:hover {
+        color: var(--gray-scale-0);
+    }
+    
+    .dropdownMenu a[aria-current="page"] {
+        color: var(--gray-scale-0);
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: 230px;
+    }
+
+    .mainLogo {
+        max-width: 70%;
+    }
+
+    .menuButton img {
+        width: 40px;
+    }
+}
+  

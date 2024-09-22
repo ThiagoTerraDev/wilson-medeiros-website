@@ -52,7 +52,7 @@
   width: 1120px;
   height: 567px;
   overflow: hidden;
-  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 
@@ -158,6 +158,306 @@
   left: 4px;
 }
 
-/* @media (max-width: 1300px) {
+@media (max-width: 1300px) {
+  .cardContatoGridWrapper {
+    width: 900px;
+  }
+
+  .cardContatoGrid {
+    width: 900px;
+  }
+
+  .cardContatoGridTextos {
+    padding-left: 50px;
+  }
+
+  .whiteContato div {
+    padding-left: 560px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cardContatoGrid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .cardContatoGrid img {
+    max-width: 330px;
+  }
   
-} */
+  .cardContatoGridWrapper {
+      max-width: 800px;
+      height: 395px;
+      top: 420px;
+  }
+
+  .cardContatoGridWrapper h2 {
+    margin-bottom: 70px;
+  }
+
+  .cardContatoGridWrapper h2::after {
+    bottom: -20px;
+  }
+
+  .cardContatoGridTextos {
+    padding-left: 45px;
+    padding-top: 40px;
+  }
+
+  .cardContatoGridTextos h2 {
+    font-size: 1.4rem;
+  }
+
+  .cardContatoGridTextos p {
+    font-size: 1rem;
+    padding-left: 38px; 
+  }
+
+  .cardContatoGridTextosDiv a {
+    transition: none;
+  }
+
+  .cardContatoGridTextosDiv:nth-of-type(1) a::before {
+    top: 2px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(2) a::before {
+    top: -3px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(3) a::before {
+    top: -5px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(4) a::before {
+    top: -1.7px;
+  }
+
+  .blueContato {
+    padding-bottom: 200px;
+  }
+
+  .blueContato span {
+    font-size: 0.75rem;
+  }
+
+  .blueContato h2 {
+    font-size: 1.8rem;
+  }
+
+  .whiteContato {
+    height: 400px;
+  }
+
+  .whiteContato div {
+    padding-top: 250px;
+    padding-left: 440px;
+  }
+
+  .whiteContato h3, .whiteContato span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cardContatoGrid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .cardContatoGrid img {
+    max-width: 330px;
+  }
+  
+  .cardContatoGridWrapper {
+      max-width: 685px;
+      height: 395px;
+      top: 420px;
+  }
+
+  .cardContatoGridWrapper h2 {
+    margin-bottom: 70px;
+  }
+
+  .cardContatoGridWrapper h2::after {
+    bottom: -20px;
+  }
+
+  .cardContatoGridTextos {
+    padding-left: 25px;
+    padding-top: 40px;
+  }
+
+  .cardContatoGridTextos h2 {
+    font-size: 1.4rem;
+  }
+
+  .cardContatoGridTextos p {
+    font-size: 1rem;
+    padding-left: 38px; 
+  }
+
+  .cardContatoGridTextosDiv a {
+    transition: none;
+  }
+
+  .cardContatoGridTextosDiv:nth-of-type(1) a::before {
+    top: 2px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(2) a::before {
+    top: -3px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(3) a::before {
+    top: -5px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(4) a::before {
+    top: -1.7px;
+  }
+
+  .blueContato {
+    padding-bottom: 200px;
+  }
+
+  .blueContato span {
+    font-size: 0.75rem;
+  }
+
+  .blueContato h2 {
+    font-size: 1.8rem;
+  }
+
+  .whiteContato {
+    height: 400px;
+  }
+
+  .whiteContato div {
+    padding-top: 250px;
+    padding-left: 440px;
+  }
+
+  .whiteContato h3, .whiteContato span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardContatoGridWrapper {
+      max-width: 570px;
+      box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.5);
+  }
+
+  .cardContatoGrid img {
+    display: none;
+  }
+
+  .cardContatoGrid {
+    width: 800px;
+    grid-template-columns: 1fr;
+  }
+
+  .cardContatoGridTextos {
+    padding-left: 30px;
+  }
+
+  .whiteContato div {
+    padding-left: 340px;
+  }
+}
+
+@media (max-width: 660px) {
+  .cardContatoGridWrapper {
+      max-width: 500px;
+  }
+
+  .whiteContato div {
+    padding-left: 270px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cardContatoGridWrapper {
+      max-width: 430px;
+  }
+
+  .cardContatoGridTextos p {
+    font-size: 0.87rem;
+  }
+
+  .whiteContato div {
+    padding-left: 210px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardContatoGridWrapper {
+      max-width: 390px;
+  }
+
+  .whiteContato div {
+    padding-left: 170px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cardContatoGridWrapper {
+      max-width: 360px;
+  }
+
+  .whiteContato div {
+    padding-left: 145px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cardContatoGridWrapper {
+      max-width: 330px;
+  }
+
+  .whiteContato div {
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cardContatoGridWrapper {
+      max-width: 300px;
+  }
+
+  .cardContatoGridTextos {
+    padding-left: 16px;
+  }
+
+  .cardContatoGridTextos h2 {
+    font-size: 1.2rem;
+  }
+
+  .cardContatoGridTextos p {
+    font-size: 0.87rem;
+  }
+
+  .cardContatoGridTextosDiv a {
+    transition: none;
+  }
+
+  .cardContatoGridTextosDiv:nth-of-type(1) a::before {
+    top: 1px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(2) a::before {
+    top: -4px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(3) a::before {
+    top: -5px;
+  }
+  
+  .cardContatoGridTextosDiv:nth-of-type(4) a::before {
+    top: -3px;
+  }
+
+  .whiteContato div {
+    padding-left: 90px;
+  }
+}

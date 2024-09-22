@@ -28,6 +28,7 @@ footer {
 .links a:hover {
   transform: scale(1.2);
 }
+
 footer p {
   color: var(--gray-scale-2);
   margin-bottom: 16px;
@@ -40,4 +41,54 @@ footer p:nth-child(3) {
 .lastParagraph {
   display: flex;
   padding-left: 38px;
+}
+
+@media (max-width: 1300px) {
+  .footerContent {
+    gap: 290px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footerContent {
+    gap: 180px;
+  }
+}
+
+@media (max-width: 1100px) {
+  footer {
+    height: 100%;
+  }
+
+  p, h4 {
+    text-align: center;
+  }
+
+  .footerContent {
+    display: grid;
+    gap: 100px;
+    padding: 0;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .footerLogo {
+    display: none;
+  }
+
+  .lastParagraph {
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lastParagraph {
+    font-size: 0.85rem;
+    margin-top: 60px;
+  }
 }
