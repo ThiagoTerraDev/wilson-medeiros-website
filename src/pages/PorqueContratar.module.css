@@ -94,6 +94,7 @@
 .maioresDesafiosFirst h2 {
   color: var(--color-se);
   margin-bottom: 48px;
+  margin-top: 8px;
 }
 
 .maioresDesafiosSecond {
