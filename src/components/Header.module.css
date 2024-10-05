@@ -123,7 +123,7 @@ header {
 
     .headerNav.active {
         display: grid;
-        grid-template-rows: repeat(4, 100px);
+        grid-template-rows: 50px 140px 50px 50px;
         right: 0;
         position: fixed;
         top: 0;
@@ -186,7 +186,7 @@ header {
 
     .dropdownMenu {
         position: fixed;
-        top: 230px;
+        top: 178px;
         right: 72px;
         gap: 24px;
         padding: 20px 24px 20px 16px;

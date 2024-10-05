@@ -133,6 +133,14 @@ button {
     .container1 {
         max-width: 360px;
     }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 420px) {

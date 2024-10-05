@@ -38,12 +38,22 @@ const Header = () => {
   },);
 
   useEffect(() => {
-    if (!location.pathname.includes("salestalks")) {
-      setDropdownVisible(false);
-    } else {
-      setDropdownVisible(true);
-    }
-  }, [location]);
+    const handleResize = () => {
+      if (location.pathname.includes("salestalks") && window.innerWidth > 1100 || isMenuActive) {
+        setDropdownVisible(true);
+      } else {
+        setDropdownVisible(false);
+      }
+    };
+  
+    handleResize();
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [location, isMenuActive]);
 
   return (
     <div>
