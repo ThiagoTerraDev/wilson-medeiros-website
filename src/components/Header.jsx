@@ -6,14 +6,17 @@ const Header = () => {
 
   const [isMenuActive, setMenuActive] = useState(false);
   const menuRef = useRef(null);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const dropdownRef = useRef(null);
+  const location = useLocation();
 
   const handleClickMenu = () => {
     setMenuActive(!isMenuActive);
   };
 
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const dropdownRef = useRef(null);
-  const location = useLocation();
+  const handleCloseMenuOnNavLinkClick = () => {
+    setMenuActive(false);
+  };
 
   const handleClickDropdown = () => {
     setDropdownVisible(!dropdownVisible);
@@ -77,10 +80,10 @@ const Header = () => {
             className={`${styles.headerNav} ${isMenuActive ? styles.active : ""}`}
             ref={menuRef}
           >
-            <NavLink to="/sobre">Sobre</NavLink>
+            <NavLink onClick={handleCloseMenuOnNavLinkClick} to="/sobre">Sobre</NavLink>
             <p onClick={handleClickDropdown}>Sales Talks</p>
-            <NavLink to="/porquecontratar">Por que contratar?</NavLink>
-            <NavLink to="/contato">Contato</NavLink>
+            <NavLink onClick={handleCloseMenuOnNavLinkClick} to="/porquecontratar">Por que contratar?</NavLink>
+            <NavLink onClick={handleCloseMenuOnNavLinkClick} to="/contato">Contato</NavLink>
           </nav>
 
           <div ref={dropdownRef}
