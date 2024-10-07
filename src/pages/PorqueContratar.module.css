@@ -429,3 +429,276 @@
   z-index: 200;
   display: block;	
 }
+
+@media (max-width: 1300px) {
+  .introContratarConteudoEscrito p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  .introContratarItens p {
+    font-size: 0.9rem;
+  }
+
+  .maioresDesafiosSecondDivs p {
+    font-size: 1rem;
+  }
+
+  .parteDepoimentos p {
+    font-size: 1.3rem;
+  }
+
+  .parteDepoimentos span {
+    font-size: 1.125rem;
+  }
+
+  .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3, .ganhosContratacaoItem4, .ganhosContratacaoItem5, .ganhosContratacaoItem6 {
+    width: 100%;
+  }
+
+  .ganhosContratacaoItens p {
+    font-size: 0.9rem;
+    max-width: 250px;
+  }
+
+  .depoimentoHome {
+    max-width: 900px;
+  }
+
+  .depoimentoHome p {
+    font-size: 1.4rem;
+  }
+
+  .depoimentoHome span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .introContratarConteudo img {
+    width: 280px;
+    right: -35px;
+  }
+
+  .ganhosContratacaoItens p {
+    font-size: 0.9rem;
+    max-width: 210px;
+  }
+
+  .depoimentoHome {
+    max-width: 800px;
+  }
+
+  .depoimentoHome p {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introContratarConteudo img {
+    display: none;
+  }
+
+  .introContratarConteudo {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+
+  .introContratarConteudo p {
+    max-width: 570px;
+  }
+
+  .introContratarItens {
+    grid-template-columns: 1.2fr 0.9fr 1fr;
+  }
+
+  .ganhosContratacaoItens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ganhosContratacaoItens p {
+    max-width: 270px;
+  }
+
+  .depoimentoHome {
+    max-width: 690px;
+  }
+
+  .depoimentoHome p {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introContratarConteudo p {
+    max-width: 530px;
+  }
+
+  .introContratarItens {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-left: 20px;
+  }
+
+  .introContratarItens h5 {
+    max-width: 100%;
+  }
+
+  .maioresDesafiosSecondDivs {
+    gap: 100px;
+  }
+
+  .ganhosContratacaoItens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ganhosContratacaoItens p {
+    max-width: 230px;
+  }
+
+  .depoimentoHome {
+    max-width: 550px;
+  }
+
+  .depoimentoHome p {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 660px) {
+  .maioresDesafiosFirst img {
+    display: none;
+  }
+
+  .parteDepoimentos {
+    grid-template-columns: 1fr;
+  }
+
+  .ganhosContratacaoItens {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 60px;
+  }
+
+  .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3, .ganhosContratacaoItem4, .ganhosContratacaoItem5, .ganhosContratacaoItem6 {
+    width: 85%;
+  }
+
+  .ganhosContratacaoItens p {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  .depoimentoHome {
+    max-width: 500px;
+  }
+
+  .depoimentoHome p {
+    max-width: 380px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .depoimentoHome {
+    max-width: 430px;
+  }
+
+  .depoimentoHome p {
+    max-width: 350px;
+    font-size: 1.2rem;
+  }
+
+  .depoimentoHome span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .maioresDesafiosSecondDivs {
+    gap: 70px;
+  }
+
+  .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3, .ganhosContratacaoItem4, .ganhosContratacaoItem5, .ganhosContratacaoItem6 {
+    width: 90%;
+  }
+
+  .depoimentoHome {
+    max-width: 390px;
+  }
+
+  .depoimentoHome p {
+    max-width: 320px;
+    font-size: 1.2rem;
+  }
+
+  .depoimentoHome span {
+    font-size: 1rem;
+    max-width: 60%;
+    text-align: center;
+    line-height: 160%;
+  }
+}
+
+@media (max-width: 450px) {
+  .maioresDesafiosFirst span, .maioresDesafiosFirst h2 {
+    width: 300px;
+  }
+
+  .maioresDesafiosSecond {
+    background: linear-gradient(to bottom, rgba(45, 100, 113, 0.2) 53%, #f3f3f3 50%);
+  }
+
+  .maioresDesafiosSecondDivs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .ganhosContratacaoItens p {
+    max-width: 280px;
+  }
+
+  .depoimentoHome {
+    max-width: 360px;
+  }
+
+  .depoimentoHome p {
+    max-width: 290px;
+    font-size: 1.1rem;
+  }
+
+  .depoimentoHome span {
+    font-size: 1rem;
+    max-width: 60%;
+    text-align: center;
+    line-height: 160%;
+  }
+}
+
+@media (max-width: 420px) {
+  .ganhosContratacaoItens p {
+    max-width: 250px;
+  }
+
+  .depoimentoHome {
+    max-width: 330px;
+  }
+
+  .depoimentoHome p {
+    max-width: 265px;
+  }
+}
+
+@media (max-width: 390px) {
+  .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3, .ganhosContratacaoItem4, .ganhosContratacaoItem5, .ganhosContratacaoItem6 {
+    width: 100%;
+  }
+
+  .depoimentoHome {
+    max-width: 300px;
+  }
+
+  .depoimentoHome p {
+    max-width: 240px;
+  }
+}
