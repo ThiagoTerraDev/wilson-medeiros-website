@@ -321,10 +321,10 @@
     display: block;	
 }
 
-/* @media (max-width: 1300px) {  
+@media (max-width: 1300px) {
     .introducaoHome {
-        height: 580px;
-    }   
+        height: 600px;
+    }
 
     .introConteudoEscrito p {
         font-size: 1rem;
@@ -332,257 +332,455 @@
     }
     
     .imagemIntro {
-        max-width: 374px;
+        max-width: 380px;
+    }
+
+    .salesTalksText {
+        grid-template-columns: 1.3fr 1fr;
     }
 
     .salesTalksText p {
         font-size: 1rem;
     }
 
-    .salesTalksBlocks img:nth-of-type(1), .salesTalksBlocks img:nth-of-type(2), .salesTalksBlocks img:nth-of-type(3) {
-        max-width: 100%;
+    .salesTalksBlocks p {
+        font-size: 0.82rem;
+        margin-top: 16px;
     }
 
     .salesTalksBlocks img:nth-of-type(1), .salesTalksBlocks img:nth-of-type(3) {
-        padding-top: 52px;
+        padding-top: 41.6px;
+        max-width: 100%;
     }
-    
-    .blockOneText h3, .blockTwoText h3, .blockThreeText h3 {
-        font-weight: 700;
-        max-width: 252px;
+
+    .salesTalksBlocks img:nth-of-type(2) {
+        width: 310px;
     }
-    
-    .blockOneText p, .blockTwoText p, .blockThreeText p {
-        margin-top: 16px;
-        line-height: 160%;
-        font-size: 0.8rem;
+
+    .salesTalksBlocks div:last-of-type {
+        padding-right: 20px;
     }
-    
-    .blockOneText h3, .blockThreeText h3 {
-        color: var(--gray-scale-0);
-    }
-    
-    .blockOneText p, .blockThreeText p {
-        color: var(--gray-scale-1);
-    }
-    
+
     .blockOneText {
-        bottom: 201px;
-        left: 24px;
-        top: 310px;
-        max-width: 250px;
+        bottom: 160.8px;
+        left: 18px; 
+        top: 290px; 
     }
-    
+
     .blockOneText p {
-        max-width: 285px;
+        max-width: 248px;
     }
-    
+
     .blockTwoText {
-        color: var(--color-primary);
-        bottom: 567px;
-        left: 340px;
-        top: 30px;
+        bottom: 453.6px;
+        left: 330px;
+        top: 32px;
     }
-    
+
     .blockTwoText p {
-        max-width: 285px;
+        max-width: 243.2px;
     }
-    
+
     .blockThreeText {
-        bottom: 223px;
-        left: 652px;
-        top: 375px;
+        bottom: 178.4px;
+        left: 638px;
+        top: 300px;
     }
-    
+
     .blockThreeText p {
-        max-width: 285px;
+        max-width: 242.4px;
     }
-    
-    .ganhosContratacao {
-        background: linear-gradient(to right, rgba(14, 60, 88, 1), rgba(14, 60, 88, 0.85));
-    }
-    
-    .ganhosContratacao span {
-        color: var(--color-terciary);
-        font-family: var(--type-first);
-        font-weight: 600;
-    }
-    
-    .ganhosContratacao h2 {
-        color: var(--gray-scale-0);
-        margin-top: 8px;
-        margin-bottom: 32px;
-    }
-    
-    .ganhosContratacaoConteudo {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: grid;
-    }
-    
-    .ganhosContratacaoConteudo button {
-        max-width: fit-content;
-        margin: 0 auto;
-    }
-    
+
     .ganhosContratacaoItens {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 80px 0;
-        gap: 28px;
+        gap: 24px;
     }
-    
-    .ganhosContratacaoItens h3 {
-        font-weight: 700;
+
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 284px;
     }
-    
-    .ganhosContratacaoItem1 {
-        display: grid;
-        background-color: rgba(4, 4, 5, 0.6);
-        height: 420px;
-        width: 355px;
-        place-items: center;
-        border-radius: 4px;
-        grid-template-rows: 160px 192px;
+
+    .ganhosContratacaoItens p {
+        font-size: 0.98rem;
+        max-width: 270px;
     }
-    
-    .ganhosContratacaoItem2 {
-        display: grid;
-        background-color: var(--gray-scale-0);
-        height: 420px;
-        width: 355px;
-        place-items: center;
-        border-radius: 4px;
-        grid-template-rows: 160px 188px;
-    }
-    
-    .ganhosContratacaoItem3 {
-        display: grid;
-        background-color: rgba(4, 4, 5, 0.6);
-        height: 420px;
-        width: 355px;
-        place-items: center;
-        border-radius: 4px;
-        grid-template-rows: 160px 210px;
-    }
-    
-    .ganhosContratacaoItem1 h3, .ganhosContratacaoItem3 h3 {
-        color: var(--gray-scale-0);
-    }
-    
-    .ganhosContratacaoItem2 h3 {
-        color: var(--color-primary);
-    }
-    
-    .ganhosContratacaoItem1 p {
-        color: var(--gray-scale-1);
-        font-size: 1rem;
-        position: relative;
-        padding-bottom: 40px;
-        padding-left: 24px;
-        max-width: 280px;
-        line-height: 160%;
-    }
-    
-    .ganhosContratacaoItem2 p {
-        color: var(--color-primary);
-        font-size: 1rem;
-        position: relative;
-        padding-bottom: 32px;
-        padding-left: 28px;
-        max-width: 280px;
-        line-height: 160%;
-    }
-    
-    .ganhosContratacaoItem3 p {
-        color: var(--gray-scale-1);
-        font-size: 1rem;
-        position: relative;
-        padding-bottom: 32px;
-        padding-left: 25px;
-        max-width: 280px;
-        line-height: 160%;
-    }
-    
+
     .ganhosContratacaoItem1 p::after {
-        content: "";
-        display: block;
-        width: 8px;
-        height: 8px;
-        background-color: var(--gray-scale-0);
-        position: absolute;
-        left: 4px;
-        top: 8px;
+        left: 8px;
     }
-    
+
     .ganhosContratacaoItem2 p::after {
-        content: "";
-        display: block;
-        width: 8px;
-        height: 8px;
-        background-color: var(--color-primary);
-        position: absolute;
-        left: 10px;
-        top: 8px;
+        left: 12px;
     }
     
     .ganhosContratacaoItem3 p::after {
-        content: "";
-        display: block;
-        width: 8px;
-        height: 8px;
-        background-color: var(--gray-scale-0);
-        position: absolute;
-        left: 5px;
-        top: 8px;
+        left: 9px;
+    }
+
+    .depoimentoHome p {
+        font-size: 1.4rem;
+    }
+
+    .depoimentoHome span {
+        font-size: 1.1rem;
+      }
+}
+
+@media (max-width: 1100px) {
+    .introducaoHome {
+        height: 560px;
     }
     
+    .imagemIntro {
+        max-width: 310px;
+        padding-top: 20px;
+    }
+
+    .salesTalksText img {
+        padding-left: 160px;
+    }
+
+    .salesTalksBlocks {
+        margin-top: 0;
+    }
+
+    .salesTalksBlocks > img, .salesTalksBlocks h3, .salesTalksBlocks p {
+        display: none;
+    }
+
+    .salesTalksBlocks div:last-of-type {
+        padding-right: 0px;
+    }
+
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 250px;
+        height: 330px;
+    }
+
+    .ganhosContratacaoItem1 {
+        grid-template-rows: 110px 200px;
+    }
+
+    .ganhosContratacaoItem2 {
+        grid-template-rows: 110px 190px;
+    }
+
+    .ganhosContratacaoItem3 {
+        grid-template-rows: 110px 212px;
+    }
+
+    .ganhosContratacaoItens p {
+        font-size: 0.84rem;
+        max-width: 235px;
+    }
+
+    .ganhosContratacaoItem1 p::after {
+        top: 6px;
+    }
+
+    .ganhosContratacaoItem2 p::after {
+        top: 6px;
+    }
+    
+    .ganhosContratacaoItem3 p::after {
+        top: 6px;
+    }
+
     .depoimentoHome {
-        background-color: rgba(45, 100, 113, 0.1);;
-        max-width: 820px;
-        margin: 0 auto;
-        margin-top: 112px;
-        margin-bottom: 112px;
-        display: grid;
-        justify-items: center;
-        box-sizing: border-box;
-        padding: 72px 0;
-        border-radius: 4px;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .introducaoHome {
+        height: 540px;
+    }
+
+    .introducaoConteudo {
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .introducaoConteudo h1 {
+        max-width: 450px;
+    }
+
+    .introducaoConteudo p {
+        max-width: 540px;
+    }
+
+    .imagemIntro {
+        display: none;
+    }
+
+    .salesTalksText {
+        grid-template-columns: 1.7fr 1fr;
+    }
+
+    .salesTalksText img {
+        padding-left: 140px;
+    }
+
+    .salesTalksBlocks {
+        grid-template-columns: max-content;
+        gap: 0;
+    }
+
+    .ganhosContratacaoItens {
+        gap: 18px;
+    }
+
+    .ganhosContratacaoItens h3 {
+        font-size: 1rem;
+    }
+
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 215px;
+        height: 370px;
+    }
+
+    .ganhosContratacaoItem1 {
+        grid-template-rows: 110px 230px;
+    }
+
+    .ganhosContratacaoItem2 {
+        grid-template-rows: 110px 244px;
+    }
+
+    .ganhosContratacaoItem3 {
+        grid-template-rows: 110px 200px;
+    }
+
+    .ganhosContratacaoItens p {
+        font-size: 0.84rem;
+        max-width: 195px;
+    }
+
+    .ganhosContratacaoItem1 p::after {
+        top: 6px;
+    }
+
+    .ganhosContratacaoItem2 p::after {
+        top: 6px;
     }
     
-    .depoimentoHome img {
-        max-width: 150px;
+    .ganhosContratacaoItem3 p::after {
+        top: 6px;
+    }
+
+    .depoimentoHome {
+        max-width: 685px;
+    }
+}
+
+@media (max-width: 800px) {
+    .salesTalksText h2 {
+        max-width: 400px;
+    }
+
+    .salesTalksText {
+        grid-template-columns: 1fr;
+    }
+
+    .salesTalksText img {
+        display: none;
+    }
+
+    .salesTalksBlocks div:last-of-type {
+        margin-top: 20px;
+        padding-right: 20px;
+    }
+
+    .ganhosContratacaoItens {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 48px;
+    }
+    
+    .ganhosContratacaoItens h3 {
+        font-size: 1.4rem;
+    }
+
+    .ganhosContratacaoItens p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 90%;
+        height: 330px;
+    }
+
+    .ganhosContratacaoItem1 {
+        grid-template-rows: 120px 200px;
+    }
+
+    .ganhosContratacaoItem2 {
+        grid-template-rows: 120px 180px;
+    }
+
+    .ganhosContratacaoItem3 {
+        grid-template-rows: 120px 180px;
+    }
+
+    .ganhosContratacaoItem1 p::after, .ganhosContratacaoItem2 p::after, .ganhosContratacaoItem3 p::after {
+        top: 8.5px;
+    }
+
+    .depoimentoHome {
+        max-width: 570px;
+    }
+
+    .depoimentoHome p {
+        max-width: 480px;
+    }
+
+    .depoimentoHome span {
+        font-size: 1rem;
+        max-width: 60%;
+        text-align: center;
+        line-height: 160%;
+      }
+}
+
+@media (max-width: 660px) {
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 95%;
+    }
+
+    .depoimentoHome {
+        max-width: 500px;
+    }
+
+    .depoimentoHome p {
+        max-width: 420px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .ganhosContratacaoItens p {
+        max-width: 380px;
+    }
+
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        width: 100%;
+        height: 340px;
+    }
+
+    .ganhosContratacaoItem1 {
+        grid-template-rows: 120px 180px;
+    }
+
+    .ganhosContratacaoItem2 {
+        grid-template-rows: 120px 200px;
+    }
+
+    .ganhosContratacaoItem3 {
+        grid-template-rows: 120px 160px;
+    }
+
+    .depoimentoHome {
+        max-width: 430px;
+      }
+    
+    .depoimentoHome p {
+        max-width: 380px;
+        font-size: 1.2rem;
+    }
+
+    .depoimentoHome span {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 500px) {
+    .introducaoHome {
+        height: 580px;
+    }
+
+    .ganhosContratacaoItens p {
+        max-width: 350px;
+    }
+
+    .depoimentoHome {
+        max-width: 390px;
     }
     
     .depoimentoHome p {
-        color: var(--color-primary);
-        font-family: var(--type-second);
-        font-style: italic;
-        font-size: 1.8rem;
-        max-width: 570px;
-        line-height: 160%;
-        margin-top: 40px;
-        margin-bottom: 64px;
-        font-weight: 900;
-    }
-    
-    .depoimentoHome span {
-        font-family: var(--type-second);
-        font-weight: 300;
+        max-width: 320px;
         font-size: 1.2rem;
-        position: relative;
-        z-index: 100;
+    }
+}
+
+@media (max-width: 450px) {
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        height: 360px;
+    }
+
+    .ganhosContratacaoItens p {
+        max-width: 320px;
+    }
+
+    .ganhosContratacaoItem3 {
+        grid-template-rows: 120px 232px;
+    }
+
+    .depoimentoHome {
+        max-width: 360px;
+    }
+
+    .depoimentoHome p {
+        max-width: 290px;
+        font-size: 1.1rem;
+    }
+
+    .depoimentoHome span {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .ganhosContratacaoItem1, .ganhosContratacaoItem2, .ganhosContratacaoItem3 {
+        height: 370px;
+    }
+
+    .ganhosContratacaoItem1 {
+        grid-template-rows: 122px 205px;
     }
     
-    .depoimentoHome span::before {
-        content: "";
-        width: 56px;
-        height: 2px;	
-        position: absolute;
-        background-color: var(--color-secondary); 
-        top: -32px;
-        right: 45.4%;
-        z-index: 200;
-        display: block;	
+    .ganhosContratacaoItens p {
+        max-width: 280px;
     }
-} */
+    
+    .depoimentoHome {
+        max-width: 330px;
+    }
+
+    .depoimentoHome p {
+        max-width: 265px;
+    }
+
+    .depoimentoHome span {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ganhosContratacaoItens p {
+        max-width: 270px;
+        margin-right: 4px;
+    }
+
+    .depoimentoHome {
+        max-width: 300px;
+    }
+    
+    .depoimentoHome p {
+        max-width: 240px;
+    }
+
+    .depoimentoHome span {
+        max-width: 270px;
+        font-size: 0.93rem;
+    }
+}
